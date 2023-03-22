@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../common/reset.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <!-- 위치 정보를 가져올 수 없을 때 보여줄 부분 -->
+    <div class="noti">
+      위치 정보를 가져올 수 없습니다.<br />
+      위치 설정을 확인해주세요.
+    </div>
+
+    <div class="container">
+      <div class="current-weather">
+        <!-- 날씨를 가져오면서 날씨에 따라 자동으로 icon 소스를 가져오게 끔 만듬-->
+        <img class="icon" />
+        <div class="temp">현재 온도</div>
+        <div class="info">
+          <div class="weather">현재 날씨</div>
+          <div class="city">현재 위치</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- export, import를 적용할 시에 type을 module로 지정 해줘야 함.-->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
