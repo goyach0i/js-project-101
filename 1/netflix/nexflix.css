@@ -1,0 +1,339 @@
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* feat: 전체를 감싸고 있는 div */
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* feat: header 부분 */
+header {
+  width: 100%;
+  height: 68px;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.playMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.logo {
+  margin-right: 25px;
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  width: 93px;
+  height: 25px;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+  font-size: 14px;
+  transition: all ease 0.3s;
+}
+
+.menu li:hover {
+  opacity: 0.5;
+}
+
+.userMenu {
+  width: 200px;
+  height: 100%;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userMenu div {
+  cursor: pointer;
+}
+
+.search {
+  margin-right: 8px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+/* feat: section (내용) */
+
+section {
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainView {
+  width: 100%;
+  height: 1000px;
+  padding-top: 70px;
+  background: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.25) 25%,
+      rgba(20, 20, 20, 0.5) 50%,
+      rgba(20, 20, 20, 0.8) 80%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(./img/mainVideo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.mainPhoto {
+  width: 100%;
+}
+
+.intro {
+  padding: 135px 0 0 60px;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  z-index: 0;
+}
+
+.wind {
+  margin: 0 0 30px 0;
+}
+
+.bt {
+  margin-top: 30px;
+}
+
+.bt button {
+  height: 58px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.bt button:hover {
+  opacity: 0.7;
+}
+
+.play {
+  width: 160px;
+  color: #111;
+  margin-right: 5px;
+}
+
+.infor {
+  width: 210px;
+  background-color: gray;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.contents {
+  margin-top: 830px;
+  z-index: 0;
+  color: white;
+  width: 100%;
+  padding: 0 0 50px;
+  padding: 0 60px;
+}
+
+.video {
+  /* margin-left: 60px; */
+  font-size: 1.9rem;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoList {
+  width: 98%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.list {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  gap: 0.5em;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px 350px;
+  column-gap: 10px;
+}
+
+.videoList img {
+  border-radius: 5px;
+  cursor: pointer;
+  height: auto;
+}
+
+/* feat: footer 주소, 정보 등 */
+
+footer {
+  width: 50%;
+  background-color: rgb(24, 24, 24);
+  color: grey;
+  margin: 20px auto 0;
+  padding: 0 4%;
+}
+
+.social {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialLink {
+  width: 36px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.social .socialLinks i {
+  color: #fff;
+  display: flex;
+}
+
+.infoLink {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin: 0 0 14px;
+  padding: 0;
+}
+
+.infoList {
+  box-sizing: border-box;
+  flex: 0 0 25%;
+  list-style-type: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.infoList a {
+  color: gray;
+}
+
+.infoList:hover {
+  text-decoration: underline;
+}
+
+.code {
+  font-size: 13px;
+}
+
+.code button {
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding: 0.5em;
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+}
+
+.code button:hover {
+  color: #fff;
+}
+
+.copyText {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.copyTextBlock {
+  margin: 8px 0 0;
+}
+
+.copyTextBlock a {
+  color: gray;
+}
+
+.copyTextBlock a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1880px) {
+  .video {
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  .videoList {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1500px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 830px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
